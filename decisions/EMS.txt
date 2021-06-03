@@ -1,0 +1,24 @@
+political_decisions = {	
+	von_moltkes_staff_reforms = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			NOT = { has_country_flag = ems_dispatch_sent }
+		}
+		allow = { steel_breech_loaded_artillery = 1 }
+		effect = {
+			prestige = 30
+			set_country_flag = ems_dispatch_sent
+		}
+		ai_will_do = {
+			country_event = 19200
+			factor = 1
+			modifier = {
+				factor = 0
+				war = no
+			}
+		}
+	}
+	

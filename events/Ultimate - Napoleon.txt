@@ -1,0 +1,124 @@
+﻿#Napoleon loses
+country_event = {
+        id = 402000
+        title = "Defeat!"
+        desc = "Despite our most valiant efforts we have been defeated by the coalition led by those darn British."
+        picture = "deadnapoleon"
+        is_triggered_only = yes
+
+
+option = {
+name = "Sacre Bleu!"
+        government = prussian_constitutionalism
+        leave_alliance = NET
+        leave_alliance = SPA
+        any_owned = {
+                limit = {
+                        is_core = NET
+                                }
+                secede_province = NET
+                                }
+        any_owned = {
+                limit = {
+                        is_core = GER
+                                }
+                secede_province = PRU
+                        }
+        any_owned = {
+                limit = {
+                        is_core = SAR
+                                }
+                secede_province = SAR
+                        }
+                727 = {
+                        secede_province = AUS
+                        }
+                728 = {
+                        secede_province = AUS
+                        }
+                739 = {
+                        secede_province = AUS
+                        }
+                AUS = {
+                        inherit = CIS
+                        }
+                SIC = {
+                        all_core = { 
+                                remove_core = NAP
+                                }
+                        }
+                        # Kingdom of Naples will disappear after the Napoelonic war to prevent NapolCISn nationalism
+
+
+                release = LUX
+        }
+
+
+}
+
+#Switzerland is down
+country_event = {
+	id = 402001
+	title = "Switzerland Surrenders!"
+	desc = "EVTDESC402001"
+	picture = "napoleon3"
+
+trigger = {
+tag = FRA
+	has_global_flag = napoleon
+	605 = {
+	controlled_by = THIS
+		}
+	
+
+mean_time_to_happen = {
+		days = 1 }
+
+##Make them our puppet##
+option = {
+name = "Make them our puppet"
+
+
+	end_war = SWI
+	treasury = 200000
+	FRA = {
+	create_vassal = SWI
+	end_war = SWI
+	milCISry_access = SWI
+		}
+           
+	prestige = 1000
+	
+	SWI = {
+	treasury = -200000
+	prestige = -5000
+political_reform = party_appointed
+political_reform = none_voting
+public_meetings = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties 
+	
+		}
+		ai_chance = {
+			factor = 25
+		}
+
+
+	
+
+
+##annex##
+
+option = {
+name = "Annex  Switzerland"
+
+	end_war = SWI
+	inherit = SWI 
+	prestige = 25
+        
+	
+		}
+}
+}

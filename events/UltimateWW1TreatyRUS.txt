@@ -1,0 +1,368 @@
+#Russia is occupied by the central powers
+country_event = {
+	id = 10000003
+	title = "Treaty of Brest-Litovsk"
+	desc = "The central Powers are victorious. Now they will enforce us to dismantle our great Russian Empire, let's hope for mercy"
+	picture = "TreatyofVersailles"
+
+        #the four lines below are only needed if they are yes
+	 
+	major = yes   
+fire_only_once = yes               
+
+	trigger = { 
+tag = RUS
+OR = {
+
+AND = {
+           1008 = {
+	   controlled_by = GER
+}
+
+}
+
+AND = {
+           1008 = {
+	   controlled_by = KUK
+}
+
+}
+
+AND = {
+           1008 = {
+	   controlled_by = TUR
+}
+
+}
+AND = {
+           1008 = {
+	   controlled_by = BUL
+}
+
+}
+
+}
+
+RUS = {
+		war_exhaustion = 10
+		}
+	has_global_flag = WW1inprogress
+
+	}
+	
+	mean_time_to_happen = {
+		day = 1
+	}
+
+##Dismantle the Russian Empire##
+	
+	option = {
+		name = "What a shame"
+		any_country = {
+	end_war = RUS	
+            }
+ set_country_flag = entente_lost_war
+
+RUS= {
+717 = {
+	secede_province = GER }
+712 = {
+	secede_province = GER }
+716 = {
+	secede_province = GER }
+713 = {
+	secede_province = GER }
+710 = {
+	secede_province = GER }
+708 = {
+	secede_province = GER }
+706 = {
+	secede_province = GER }
+711 = {
+	secede_province = GER }
+709 = {
+	secede_province = GER }
+707 = {
+	secede_province = GER }
+936 = {
+	secede_province = GER }
+719 = {
+	secede_province = GER }
+937 = {
+	secede_province = GER }
+360 = {
+	secede_province = GER }
+361 = {
+	secede_province = GER }
+362 = {
+	secede_province = GER }
+363 = {
+	secede_province = GER }
+364 = {
+	secede_province = GER }
+365 = {
+	secede_province = GER }
+359 = {
+	secede_province = GER }
+358 = {
+	secede_province = GER }
+357 = {
+	secede_province = GER }
+354 = {
+	secede_province = GER }
+356 = {
+	secede_province = GER }
+355 = {
+	secede_province = GER }
+352 = {
+	secede_province = GER }
+351 = {
+	secede_province = GER }
+349 = {
+	secede_province = GER }
+350 = {
+	secede_province = GER }
+353 = {
+	secede_province = GER }
+938 = {
+	secede_province = GER }
+939 = {
+	secede_province = GER }
+940 = {
+	secede_province = GER }
+947 = {
+	secede_province = GER }
+946 = {
+	secede_province = GER }
+945 = {
+	secede_province = GER }
+944 = {
+	secede_province = GER }
+948 = {
+	secede_province = GER }
+949 = {
+	secede_province = GER }
+718 = {
+	secede_province = GER }
+941 = {
+	secede_province = GER }
+942 = {
+	secede_province = GER }
+
+
+
+}
+
+RUS = {
+677 = {
+	secede_province = KUK }
+676 = {
+	secede_province = KUK }
+678 = {
+	secede_province = KUK }
+957 = {
+	secede_province = KUK }
+956 = {
+	secede_province = KUK }
+955 = {
+	secede_province = KUK }
+954 = {
+	secede_province = KUK }
+959 = {
+	secede_province = KUK }
+960 = {
+	secede_province = KUK }
+969 = {
+	secede_province = KUK }
+968 = {
+	secede_province = KUK }
+715 = {
+	secede_province = KUK }
+958 = {
+	secede_province = KUK }
+962 = {
+	secede_province = KUK }
+963 = {
+	secede_province = KUK }
+961 = {
+	secede_province = KUK }
+971 = {
+	secede_province = KUK }
+970 = {
+	secede_province = KUK }
+965 = {
+	secede_province = KUK }
+964 = {
+	secede_province = KUK }
+967 = {
+	secede_province = KUK }
+966 = {
+	secede_province = KUK }
+973 = {
+	secede_province = KUK }
+972 = {
+	secede_province = KUK }
+976 = {
+	secede_province = KUK }
+975 = {
+	secede_province = KUK }
+974 = {
+	secede_province = KUK }
+978 = {
+	secede_province = KUK }
+980 = {
+	secede_province = KUK }
+
+
+}
+
+RUS = {
+1101 = {
+	secede_province = TUR }
+1100 = {
+	secede_province = TUR }
+1098 = {
+	secede_province = TUR }
+1099 = {
+	secede_province = TUR }
+1106 = {
+	secede_province = TUR }
+1105 = {
+	secede_province = TUR }
+1107 = {
+	secede_province = TUR }
+1104 = {
+	secede_province = TUR }
+1102 = {
+	secede_province = TUR }
+1103 = {
+	secede_province = TUR }
+1090 = {
+	secede_province = TUR }
+1091 = {
+	secede_province = TUR }
+1092 = {
+	secede_province = TUR }
+1094 = {
+	secede_province = TUR }
+1093 = {
+	secede_province = TUR }
+1095 = {
+	secede_province = TUR }
+1049 = {
+	secede_province = TUR }
+979 = {
+	secede_province = TUR }
+1047 = {
+	secede_province = TUR }
+1046 = {
+	secede_province = TUR }
+1045 = {
+	secede_province = TUR }
+1039 = {
+	secede_province = TUR }
+1040 = {
+	secede_province = TUR }
+1041 = {
+	secede_province = TUR }
+1036 = {
+	secede_province = TUR }
+1048 = {
+	secede_province = TUR }
+1050 = {
+	secede_province = TUR }
+1051 = {
+	secede_province = TUR }
+1056 = {
+	secede_province = TUR }
+1054 = {
+	secede_province = TUR }
+1055 = {
+	secede_province = TUR }
+1057 = {
+	secede_province = TUR }
+1053 = {
+	secede_province = TUR }
+1052 = {
+	secede_province = TUR }
+
+}
+
+
+RUS = {
+government = hms_government
+release = FIN
+prestige = -5000
+neutrality = yes
+
+relation = {
+	who = FRA
+	value = -200
+}
+relation = {
+	who = ENG
+	value = -200
+}
+relation = {
+	who = USA
+	value = -200
+}
+relation = {
+	who = ITA
+	value = -200
+}
+
+relation = {
+	who = JAP
+	value = -200
+}
+relation = {
+	who = ALB
+	value = -200
+}
+relation = {
+	who = AST
+	value = -200
+}
+relation = {
+	who = EGY
+	value = -200
+}
+
+relation = {
+	who = GRE
+	value = -200
+}
+relation = {
+	who = MON
+	value = -200
+}
+relation = {
+	who = POR
+	value = -200
+}
+relation = {
+	who = ROM
+	value = -200
+}
+relation = {
+	who = SAF
+	value = -200
+}
+relation = {
+	who = SER
+	value = -200
+}
+
+relation = {
+	who = CAN
+	value = -200
+}
+relation = {
+	who = BEL
+	value = -200
+}
+
+
+	}
+}

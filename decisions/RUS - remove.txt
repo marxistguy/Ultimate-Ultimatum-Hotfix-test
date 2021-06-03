@@ -1,0 +1,31 @@
+political_decisions = {	
+	remove_protector = {
+		potential = {
+			tag = RUS
+			year = 1918
+			NOT = { government = absolute_monarchy }
+			has_country_modifier = protector_of_eastern_christendom
+		             }
+		
+		allow = {
+			OR = {
+				government = fascist_dictatorship
+				government = presidential_dictatorship
+				government = proletarian_dictatorship
+			      }
+		         }
+		
+		effect = {
+			set_country_flag = protector_removed
+			remove_country_modifier = protector_of_eastern_christendom
+			prestige = -20
+		          }
+	    ai_will_do = { 
+		factor = 1
+	    modifier = {
+	 	factor = 0
+	    }
+	}
+		}
+}
+	
